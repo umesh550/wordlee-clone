@@ -53,8 +53,9 @@ nav {
 
 .keypad {
   display: grid;
-  grid-template-columns: repeat(10, 39px);
+  grid-template-columns: repeat(10, minmax(30px, 1fr));
   grid-template-rows: 50px 50px 50px;
+  padding: 5px;
   gap: 6px;
 }
 
