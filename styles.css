@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  display: flex;
+  min-height: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid black;
+}
+
+.mainArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.tile {
+  height: 50px;
+  display: flex;
+  font-size: 25px;
+  transition: animation 0.7s;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #d3d6da;
+}
+
+.animation {
+  transform: scale(1.1);
+}
+
+.board {
+  display: grid;
+  margin: 10px;
+  grid-template-columns: repeat(5, 50px);
+  gap: 6px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(10, 39px);
+  grid-template-rows: 50px 50px 50px;
+  gap: 6px;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.key[data-key*="Z"] {
+  grid-column: 2;
+}
+
+.CorrectPositionLetter {
+  border: none;
+  color: white;
+  background-color: #4caf50;
+  transition: background-color 0.7s ease;
+}
+
+.IncorrectLetter {
+  border: none;
+  color: white;
+  background-color: rgb(170, 66, 66);
+  transition: background-color 0.7s ease;
+}
+
+.MisplacedLetter {
+  border: none;
+  color: white;
+  background-color: rgb(170, 170, 73);
+  transition: background-color 0.7s ease;
+}
