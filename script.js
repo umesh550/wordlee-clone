@@ -124,7 +124,6 @@ const checkAnswer = (data) => {
 
 const initializeGame = () => {
   randomWord = getRandomWord(wordlee).toUpperCase();
-  console.log(randomWord);
 };
 
 const incorrectLetter = () => {
