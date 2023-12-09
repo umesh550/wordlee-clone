@@ -26,11 +26,11 @@ nav {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  margin: 5px 0px;
+  margin: 0.35em 0px;
 }
 
 .tile {
-  height: 50px;
+  height: 2.25em;
   display: flex;
   font-size: 25px;
   transition: animation 0.7s;
@@ -46,17 +46,17 @@ nav {
 
 .board {
   display: grid;
-  margin: 10px;
-  grid-template-columns: repeat(5, 50px);
-  gap: 6px;
+  margin: 1.25em 0.625em;
+  grid-template-columns: repeat(5, 3.25em);
+  gap: 0.375em;
 }
 
 .keypad {
   display: grid;
-  grid-template-columns: repeat(10, minmax(15px, 1fr));
-  grid-template-rows: 50px 50px 50px;
-  padding: 5px;
-  gap: 6px;
+  grid-template-columns: repeat(10, minmax(0.95em, 1fr));
+  grid-template-rows: repeat(3, 3.25em);
+  padding: 0.325em;
+  gap: 0.375em;
 }
 
 .key {
@@ -64,7 +64,7 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  padding: 16px;
+  padding: 0.25em;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 8px;
